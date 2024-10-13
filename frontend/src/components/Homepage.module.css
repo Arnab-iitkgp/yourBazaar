@@ -1,0 +1,27 @@
+.home {
+  padding: 20px;
+  width: 60%;
+}
+
+.heroSection {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 130px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shopNowBtn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shopNowBtn:hover {
+  background-color: #555;
+}

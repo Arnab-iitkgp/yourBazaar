@@ -1,0 +1,10 @@
+.Container {
+  background-color: #2c2c2c;
+  min-height: 65vh;
+  height: 100%;
+  width: 40%;
+  padding: 2vh;
+  padding-top: 10vh;
+  font-size: 20px;
+  font-weight: 530;
+}
