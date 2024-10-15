@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setSelectedItem } from "../store/itemSlice";
+import styles from "./Folder.module.css";
 const Folder = function ({ directory }) {
   const [isVisible, setIsVisible] = useState(false);
   const expand = () => {
@@ -13,8 +14,11 @@ const Folder = function ({ directory }) {
     dispatch(setSelectedItem(file));
   };
   return (
-    <div style={{ paddingLeft: 10 }}>
-      <span onClick={expand}>📂{directory.name}</span>
+    <div style={{ paddingLeft: 8 }}>
+      <span onClick={expand} className={isVisible ? styles.activeDir : null}>
+        📂
+        {directory.name}
+      </span>
       {isVisible ? (
         <>
           {directory?.children?.map((child) => {

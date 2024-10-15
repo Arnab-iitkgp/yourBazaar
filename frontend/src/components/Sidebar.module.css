@@ -8,3 +8,11 @@
   font-size: 20px;
   font-weight: 530;
 }
+@media (max-width: 900px) {
+  .Container {
+    font-size: 0.7rem;
+    padding-top: 2vh;
+    min-height: 80vh;
+    padding-right: 3vh;
+  }
+}

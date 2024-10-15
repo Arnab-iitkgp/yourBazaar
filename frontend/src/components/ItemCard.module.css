@@ -7,7 +7,7 @@
   border-radius: 8px;
   padding: 16px;
   padding-bottom: 20px;
-  width: 50%;
+  width: 60%;
   max-height: 70vh;
   box-shadow: 0 4px 8px rgba(29, 28, 28, 0.1);
   margin: 16px 16px;
@@ -56,4 +56,16 @@ p {
   padding: 2px 3px;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding-right: 4vw;
+    margin-right: -20px;
+    min-height: 70vh;
+  }
+  .productImage {
+    height: 22%;
+    max-width: 95%;
+  }
 }

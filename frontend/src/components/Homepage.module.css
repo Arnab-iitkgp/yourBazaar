@@ -1,5 +1,6 @@
 .home {
   padding: 20px;
+  /* padding-right: 2px; */
   width: 60%;
 }
 
@@ -24,4 +25,17 @@
 
 .shopNowBtn:hover {
   background-color: #555;
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: 10px;
+    margin-right: -40px;
+  }
+  .heroSection {
+    padding: 10rem 3rem;
+  }
+  .shopNowBtn {
+    margin-top: 10px;
+  }
 }
