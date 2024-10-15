@@ -1,4 +1,7 @@
 <h1>YourBAZAAR</h1><br>
+<h4>Deployed on netlify: <a href="https://yourbazaar.netlify.app/"> YourBAZAAAR<a/></h4>
+  <br>
+ 
 
 ![Screenshot 2024-10-13 234030](https://github.com/user-attachments/assets/aec5ede1-db23-41b7-b8f4-ea8c80ee466c)
 
