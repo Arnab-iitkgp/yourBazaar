@@ -10,7 +10,7 @@ const Folder = function ({ directory }) {
   };
   const dispatch = useDispatch();
   const showItem = function (file) {
-    console.log(file);
+    // console.log(file);
     dispatch(setSelectedItem(file));
   };
   return (
@@ -23,7 +23,7 @@ const Folder = function ({ directory }) {
         <>
           {directory?.children?.map((child) => {
             return (
-              <div style={{ paddingLeft: 10 }}>
+              <div style={{ paddingLeft: 8 }}>
                 <Folder directory={child} />
               </div>
             );
@@ -31,7 +31,7 @@ const Folder = function ({ directory }) {
 
           {directory?.fileChildren?.map((file) => {
             return (
-              <div style={{ paddingLeft: 10 }} onClick={() => showItem(file)}>
+              <div style={{ paddingLeft: 8 }} onClick={() => showItem(file)}>
                 {/* <a href={file.image_url}>  */}
                 🖼️{file.name}
                 {/* </a> */}

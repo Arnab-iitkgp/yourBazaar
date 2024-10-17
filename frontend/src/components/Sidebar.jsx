@@ -7,7 +7,6 @@ import styles from "./Sidebar.module.css";
 const Sidebar = function () {
   const result1 = itemPushToStore(godown, items);
   const result = nestedAllfolder(result1);
-  console.log(result);
   return (
     <div className={styles.Container}>
       {result.map((res) => (

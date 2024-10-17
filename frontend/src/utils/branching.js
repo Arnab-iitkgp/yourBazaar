@@ -12,14 +12,14 @@ export function itemPushToStore(data, itms) {
   return dataCopy;
 }
 export function nestedAllfolder(data, parent_id = null) {
-  return data.reduce((r, e) => {
+  return data.reduce((arr, e) => {
     if (e.parent_godown === parent_id) {
       const obj = { ...e };
       const children = nestedAllfolder(data, e.id);
       if (children.length) obj.children = children;
-      r.push(obj);
+      arr.push(obj);
     }
 
-    return r;
+    return arr;
   }, []);
 }

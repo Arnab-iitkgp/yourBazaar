@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import Searchbar from "./Searchbar";
 
 const Navbar = function () {
   return (
@@ -8,11 +9,10 @@ const Navbar = function () {
       </div>
 
       <h3>"Shop Smart, Shop BAZAAR - Quality, Variety, Convenience"</h3>
-
+      <Searchbar />
       <div className={styles.links}>
         <div className={styles.navLinks}>
           <a href="#home">Home</a>
-          <a href="#contact">Contact</a>
         </div>
 
         <div className={styles.navBtn}>
